@@ -59,19 +59,109 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #d7deef;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fbfcff 0%, #f5f8ff 100%);
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
-  color: #0066cc;
+  color: #1a237e;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #dbe5ff;
+  border-radius: 8px;
+  background-color: #eef3ff;
+}
+
+.participants-title {
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: #1a237e;
+  text-transform: uppercase;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  color: #24324f;
+}
+
+.participants-list li {
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+.participants-list li:last-child {
+  margin-bottom: 0;
+}
+
+.empty-participants {
+  margin-left: 0;
+  font-style: italic;
+  color: #5f6d8d;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.participant-item:hover {
+  background-color: rgba(26, 35, 126, 0.06);
+}
+
+.participant-email {
+  flex: 1;
+  min-width: 0;
+}
+
+.participant-remove-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #d2d9f2;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #a01a1a;
+  cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.participant-remove-btn:hover {
+  background-color: #ffeaea;
+  border-color: #f4b9b9;
+  transform: translateY(-1px);
+}
+
+.participant-remove-btn:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.participant-remove-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .form-group {
